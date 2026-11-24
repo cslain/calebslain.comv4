@@ -1,0 +1,23 @@
+[
+ {
+  "hi": true,
+  "mime": "video/mp4; codecs=\"hvc1.1.6.L150.90, mp4a.40.2\"",
+  "name": "hevc2",
+  "parts": 19,
+  "bytes": 183119768
+ },
+ {
+  "hi": true,
+  "mime": "video/mp4; codecs=\"avc1.640033, mp4a.40.2\"",
+  "name": "avc2",
+  "parts": 19,
+  "bytes": 189471097
+ },
+ {
+  "hi": false,
+  "mime": "video/mp4; codecs=\"avc1.640028, mp4a.40.2\"",
+  "name": "lite2",
+  "parts": 8,
+  "bytes": 74454341
+ }
+]
