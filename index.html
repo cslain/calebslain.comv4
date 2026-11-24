@@ -6283,7 +6283,7 @@ let cv=document.createElement("canvas");cv.width=512,cv.height=1024;let g=cv.get
 /* An Easter egg in the Ford room: a framed photo of the project's creatives on a slim stand, in the corner beside the
    doorway, where it only shows once you are inside and turn round. It faces the bench. */
 {let sx=V-.62,sz=Bt.zMax-.62,st=new fn,hd=new fn,cvs=document.createElement("canvas");cvs.width=cvs.height=4;
-let tx=Ai(cvs),im=new Image;im.onload=()=>{cvs.width=im.naturalWidth,cvs.height=im.naturalHeight,cvs.getContext("2d").drawImage(im,0,0),tx.dispose(),tx.needsUpdate=!0},im.src="media/ford-crew.jpg";
+let tx=Ai(cvs),im=new Image;im.onload=()=>{cvs.width=im.naturalWidth,cvs.height=im.naturalHeight,cvs.getContext("2d").drawImage(im,0,0),tx.dispose(),tx.needsUpdate=!0},im.src="media/ford-crew2.jpg";
 let pm=new Nt({map:tx}),wm=new at({color:15263976,roughness:.9});b.basics.push([pm,.3]);
 let pw=.27,ph=pw*868/760,part=(g,m,x,y,z,to)=>{let o=new nt(g,m);return o.position.set(x,y,z),o.castShadow=o.receiveShadow=!0,to.add(o),o};
 part(new en(.26,.015,.26),H,0,.0075,0,st),part(new en(.03,1.03,.03),H,0,.53,0,st);
