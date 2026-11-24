@@ -7520,7 +7520,7 @@ void main(){
         Rn.setRenderTarget(rt),G.visible=was}
       const p=Mn.position,dd=Math.hypot(p.x,p.z-zd),inside=p.z<zd;
       /* door: slides open as the visitor comes near, from either side */
-      const tgt=dd<4.6?1:0;open=Math.max(0,Math.min(1,open+(tgt>open?1:-1)*dt/.9));
+      const tgt=dd<3.45?1:0;open=Math.max(0,Math.min(1,open+(tgt>open?1:-1)*dt/.9));
       const o=open*open*(3-2*open);leaves[0].position.x=-.375-.775*o,leaves[1].position.x=.375+.775*o;
       const vis=open>.001||inside;G.visible=vis,doorGlow.value=o;
       fov+=((inside?Math.min(1,(zd-p.z)/6):0)*16-fov)*Math.min(1,dt*3);
