@@ -3,7 +3,7 @@
 # for the white gallery. Run tools/pages_build.py to put this into index.html.
 #
 # Fields: t title, k facts line under the title (films: type, year, runtime; commercials: the brand),
-# f facts [[label, value]], v videos [[vimeo id, width/height, caption]], log logline, d description paragraphs,
+# f facts [[label, value]], v videos [[vimeo id, width/height, caption, share of height trimmed off the top]], log logline, d description paragraphs,
 # note, cast, feat featuring, links, aw awards [[year, text, highlight]], pr press [[outlet, title, url]],
 # cr credits [[role, names]], films (pages that show more than one film). The section line (s) is added at the end.
 
@@ -341,7 +341,7 @@ PAGES = {
     # Not on the 3.0 site yet: only the film, from the Vimeo links Caleb sent on November 24, 2026.
     "Driven by More": {"t": "Ford \u2014 Driven by More", "k": "Ford", "v": [["1149501141", 1.99]]},
     "Steel Alchemist": {"t": "Ford \u2014 Steel Alchemist", "k": "Ford", "v": [["1149544144", 1.99]]},
-    "Los Escarabajos": {"t": "Ford \u2014 Los Escarabajos", "k": "Ford", "v": [["1249876870/bd7b9a1c5b", 1.99]]},
+    "Los Escarabajos": {"t": "Ford \u2014 Los Escarabajos", "k": "Ford", "v": [["1249876870/bd7b9a1c5b", 1.99, None, .015]]},
     "Toyota": {
         "t": "Toyota 4Runner \u2014 Expand Your World", "k": "Toyota 4Runner",
         "f": [["Agency", "Saatchi & Saatchi"], ["Production", "Friends & Family"]],
