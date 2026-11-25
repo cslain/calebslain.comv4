@@ -147,7 +147,7 @@
   body.onscreen #reticle { width: 9px; height: 9px; margin: -4.5px; background: #1eea8c; box-shadow: 0 0 0 1.5px rgba(3,8,6,.75); }
   /* a painting that opens its painter's page: the pointer becomes a small diagonal arrow */
   body.drag.onscreen.golink #view { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M4 14L14 4M7 4h7v7' fill='none' stroke='%23030806' stroke-width='4.5'/%3E%3Cpath d='M4 14L14 4M7 4h7v7' fill='none' stroke='%231eea8c' stroke-width='2'/%3E%3C/svg%3E") 14 4, alias; }
-  body.onscreen.golink #reticle { width: 18px; height: 18px; margin: -9px; border-radius: 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M4 14L14 4M7 4h7v7' fill='none' stroke='%23030806' stroke-width='4.5'/%3E%3Cpath d='M4 14L14 4M7 4h7v7' fill='none' stroke='%231eea8c' stroke-width='2'/%3E%3C/svg%3E") center / 18px no-repeat; box-shadow: none; }
+  body.onscreen.golink #reticle { transition: none; width: 18px; height: 18px; margin: -9px; border-radius: 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath d='M4 14L14 4M7 4h7v7' fill='none' stroke='%23030806' stroke-width='4.5'/%3E%3Cpath d='M4 14L14 4M7 4h7v7' fill='none' stroke='%231eea8c' stroke-width='2'/%3E%3C/svg%3E") center / 18px no-repeat; box-shadow: none; }
 
   /* the script from the desk downstairs: typed pages, one under another */
   /* (a phone's own pinch-zoom is kept off every page here: it would leave the gallery stuck enlarged behind it. The script is zoomed by its own buttons, or by a pinch that only resizes its pages) */
