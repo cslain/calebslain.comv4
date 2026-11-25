@@ -1,10 +1,11 @@
-# Project page content for the gallery, copied from the project doc claude/calebslain-project-pages.md
-# (built from the 3.0 site). Keys are the gallery's own ids: film ids for the green gallery, screen names
+# Project page content for the gallery, copied from the project docs claude/calebslain-project-pages.md and
+# calebslain-project-pages-2.md as regenerated on November 24, 2026 from the live 3.0 site. Keys are the gallery's own ids: film ids for the green gallery, screen names
 # for the white gallery. Run tools/pages_build.py to put this into index.html.
 #
-# Fields: t title, k line above the title, f facts [[label, value]], v videos [[vimeo id, width/height, caption]],
-# log logline, d description paragraphs, note, cast, app appearances, links, aw awards [[year, text]],
-# pr press [[outlet, title, url]], cr credits [[role, names]], films (pages that show more than one film).
+# Fields: t title, k facts line under the title (films: type, year, runtime; commercials: the brand),
+# f facts [[label, value]], v videos [[vimeo id, width/height, caption]], log logline, d description paragraphs,
+# note, cast, feat featuring, links, aw awards [[year, text, highlight]], pr press [[outlet, title, url]],
+# cr credits [[role, names]], films (pages that show more than one film). The section line (s) is added at the end.
 
 SURFACE_PRESS = [
     ["Business Insider", "Microsoft Snubs Ad Agencies in Favor of This 22-Year-Old for Surface Tablet Launch Video", "https://www.businessinsider.com/microsoft-snubs-ad-agencies-in-favor-of-this-22-year-old-for-surface-tablet-launch-video-2012-7"],
@@ -24,12 +25,13 @@ PAGES = {
         "d": ["Built from footage shot over a decade, enough. follows Nathan Nzanga from a kid born to Congolese immigrants to an idealistic teen artist to a young man struggling to find grace amid pain. Shot in two days during the 2020 Seattle protests with a volunteer crew from Prodigy Camp."],
         "cast": "Nathan Nzanga, Max Losee, Shawn Telford",
         "aw": [
-            ["2021", "Tribeca Festival: Online World Premiere (Tribeca Online Premieres, Juneteenth programming)"],
+            ["2021", "Film Shortage: #1 Short Film of 2021 (Top 10)", 1],
+            ["2021", "Tribeca Festival: Online World Premiere (Tribeca Online Premieres, Juneteenth programming)", 1],
+            ["2021", "Vimeo: Staff Pick, Best of the Month"],
             ["2021", "Academy Awards: Oscar-qualified short"],
             ["2021", "Short Shorts Film Festival & Asia: Official Selection"],
             ["2021", "Indy Shorts (Heartland Film): Official Selection"],
             ["2021", "Dances With Films: Official Selection"],
-            ["2021", "Film Shortage: #1 Short Film of 2021 (Top 10)"],
         ],
         "pr": [
             ["Reuters", "Music, marching and now a movie: How a young Black artist is pushing for justice in America", "https://www.reuters.com/article/us-usa-race-film-idUSKBN2A91BM/"],
@@ -50,20 +52,19 @@ PAGES = {
             ["Director", "Caleb Slain"],
             ["Writers", "Caleb Slain, Nathan Nzanga"],
             ["Music & Lyrics", "Nathan Nzanga"],
-            ["Producers", "Rick Stevenson, Max Losee, Ethan Seneker, Hope Alexander, Jennette Vasiljevic, La'Charles Trask, Caleb Slain"],
-            ["Executive Producer", "William G. Way"],
+            ["Producers", "Max Losee, Ethan Seneker, Hope Alexander, Jennette Vasiljevic, La'Charles Trask, Caleb Slain"],
+            ["Executive Producers", "William G. Way, Rick Stevenson"],
             ["Director of Photography", "Drew Dawson"],
             ["Production Designer", "Hadley Hillel"],
             ["Editors", "Nick Pezzillo, Caleb Slain"],
             ["Wardrobe", "Ron Leaman"],
             ["Color", "Chad Terpstra"],
-            ["Production Company", "Superdoom"],
-            ["Created in community at", "Prodigy Camp"],
+            ["Production Company", "Prodigy Camp"],
         ],
     },
     "demon": {
         "t": "Demon", "k": "Narrative short (horror-western) · 2017 · 25 min",
-        "v": [["297748844", 2.0]],
+        "v": [["297649300", 2.0, "Trailer"], ["297748844", 2.0, "The film"]],
         "log": "An injured man finds a secret on his rescuer's property.",
         "d": ["Shot entirely by the light of a full moon outside Joshua Tree, DEMON is a cinematic lunar experience starring Kirk Baltz (Reservoir Dogs, Natural Born Killers) and Brent Gutierrez."],
         "note": "Watch in a dark environment.",
@@ -123,7 +124,7 @@ PAGES = {
     "iao": {
         "t": "It Ain't Over", "k": "Documentary short · 2012",
         "v": [["37344002", 1.778]],
-        "log": "A stylized, cinematic portrait of a terminally ill man.",
+        "log": "An intimate portrait of a terminally ill spiritual leader.",
         "d": ["World premiere at SXSW 2012."],
         "aw": [
             ["2012", "SXSW: World Premiere"],
@@ -144,8 +145,8 @@ PAGES = {
     "wtteotw": {
         "t": "Welcome To The End Of The World", "k": "Documentary short · 2014 · 16 min",
         "v": [["90513461", 1.778]],
-        "log": "In Nagaland, one of the most remote regions of the eastern Himalayas, a team called Vitamin Angels works to reach children the world has ignored.",
-        "d": ["In autumn 2013, Vitamin Angels recruited three filmmakers to document its work with children in the Indian state of Nagaland. Shot on a 5D Mk III (Magic Lantern)."],
+        "log": "In Nagaland, one of the most remote regions of the eastern Himalayas, a team called Vitamin Angels works to reach children that the world has left behind.",
+        "d": ["In autumn 2013, Vitamin Angels recruited three filmmakers to document its work with children in Peru, the USA, and India. Shot on a 5D Mk III (Magic Lantern)."],
         "cr": [
             ["Director", "Caleb Slain"],
             ["Cinematography & Color", "Chad Terpstra"],
@@ -159,7 +160,7 @@ PAGES = {
     "freq": {
         "t": "Frequencies: The Music of League of Legends", "k": "Documentary (branded) · 2015 · 45 min",
         "v": [["118705527", 1.778]],
-        "log": "A journey into the strange and explosive music department of the world's most popular video game, run by a gang of gamers-turned-composers.",
+        "log": "A dramatic journey into the music department of the world's most popular video game, run by a gang of gamers-turned-composers.",
         "d": ["Released by Riot Games in 2015, FREQUENCIES began as a short film about the music team and grew into an hour-long documentary."],
         "pr": [
             ["Contently", "How a Video Game Company Gained Ground with Documentary Filmmaking", "https://contently.com/2015/03/16/how-a-video-game-company-gained-ground-with-documentary-filmmaking/"],
@@ -196,7 +197,7 @@ PAGES = {
     "jc": {
         "t": "Juggle & Cut", "k": "Documentary short · 2013",
         "v": [["64723147", 1.778]],
-        "log": "A tragedy in 1998 echoes through a small American town, twisting the dreams of a young prodigy in strange and moving ways.",
+        "log": "A tragedy in 1998 echoes through a small American town, twisting the dreams of a young prodigy in unimaginable ways.",
         "d": ["The story of Andy Phelps: juggler, unicyclist, carpenter, hockey player and fire-breather, paralyzed in a 1998 car accident."],
         "cast": "Andy Phelps",
         "pr": [
@@ -216,8 +217,8 @@ PAGES = {
     "tlfs": {
         "t": "The Lost & Found Shop", "k": "Narrative short · 2010",
         "v": [["12672083", 1.765]],
-        "log": "First full-scale production, made at 19.",
-        "d": ["Shot in 2 days. $1,200 budget plus 12,000 favors. All department heads under 23. Not a student film."],
+        "log": "At a strange shop with stranger merchandise, a Shopkeeper begrudgingly helps a young girl in search of her lost memory.",
+        "d": ["First full-scale production, made at 19. Shot in 2 days. $1,200 budget plus 12,000 favors. All department heads under 23. Not a student film."],
         "aw": [
             ["2012", "Corona Fastnet Short Film Festival (Ireland): Best Young Filmmaker"],
             ["2011", "NFFTY: Best Short Film; Audience Award (Opening Night); Most Promising Storyteller Scholarship"],
@@ -280,7 +281,7 @@ PAGES = {
         "v": [["87873042", 1.778]],
         "log": "A post-script journey through Philip Seymour Hoffman's lifetime in cinema.",
         "d": ["200 hours of work went into breaking down 47 of Hoffman's films. After 22 years on screen and nearly 50 films, a look at an actor whose work is characterized by his allergy to dishonesty and unflinching spirit of compassion."],
-        "app": "Joaquin Phoenix, Jude Law, Helen Hunt, Ben Stiller, Jeff Bridges, Robert De Niro, Ricky Gervais, Louis CK, Tom Hanks, Catherine Keener, Sarah Jessica Parker, Ryan Gosling, Tom Cruise, Michelle Monaghan, Ethan Hawke, Adam Sandler (voice), Kathy Bates, Jennifer Jason Leigh, Laura Linney, Barry Pepper, Paul Newman, Marisa Tomei, Brad Pitt, Meryl Streep, Robin Williams, Philip Baker Hall, Julianne Moore, Clifton Collins Jr., Chris O'Donnell, Michelle Williams, Samantha Morton, Emily Watson, Andy Garcia, Mark Wahlberg, John C. Reilly, Bill Paxton",
+        "feat": "Joaquin Phoenix, Jude Law, Helen Hunt, Ben Stiller, Jeff Bridges, Robert De Niro, Ricky Gervais, Louis CK, Tom Hanks, Catherine Keener, Sarah Jessica Parker, Ryan Gosling, Tom Cruise, Michelle Monaghan, Ethan Hawke, Adam Sandler (voice), Kathy Bates, Jennifer Jason Leigh, Laura Linney, Barry Pepper, Paul Newman, Marisa Tomei, Brad Pitt, Meryl Streep, Robin Williams, Philip Baker Hall, Julianne Moore, Clifton Collins Jr., Chris O'Donnell, Michelle Williams, Samantha Morton, Emily Watson, Andy Garcia, Mark Wahlberg, John C. Reilly, Bill Paxton",
         "pr": [
             ["TIME", "Philip Seymour Hoffman's best performances (video)", "https://time.com/12994/philip-seymour-hoffman-best-performances-video/"],
             ["NPR Fresh Air", "This fantastic and moving tribute to Philip Seymour Hoffman", "https://nprfreshair.tumblr.com/post/78776511858/this-fantastic-and-moving-tribute-to-philip"],
@@ -313,9 +314,37 @@ PAGES = {
     },
 
     # ---------------- white gallery (keys are the screen names) ----------------
+    "Red Bull": {
+        "t": "Red Bull \u2014 50 Years of Breakdance", "k": "Red Bull",
+        "f": [["Production", "Rodeo"], ["Shot in", "Lisbon, Portugal"]],
+        "v": [["1244377694/6ca9944738", 1.99]],
+        "feat": "Kastet, Lilou, Junior, Kid Colombia",
+        "cr": [
+            ["Director", "Caleb Slain"],
+            ["Production Company", "Rodeo"],
+            ["Executive Producer", "Graham Budd"],
+            ["Producer", "John Kennedy"],
+            ["Director of Photography", "Duarte Domingos"],
+            ["Editor", "Nick Pezzillo"],
+            ["Colorist", "Benoit Cot\u00e9"],
+            ["VFX", "Rodeo VFX"],
+            ["VFX Supervisor", "Olivier Barb\u00e8s-Morin"],
+            ["Music", "Reid Willis"],
+            ["Line Producer", "Kirsta Teague"],
+            ["Service Production (Portugal)", "AG Films"],
+            ["Executive Producer (Portugal)", "James Dubec"],
+            ["Producers (Portugal)", "Ricardo Almeida, Sofia Claro da Fonseca"],
+            ["1st AD", "Lu\u00eds Lisboa"],
+            ["2nd AD", "Ricardo Pinela"],
+        ],
+    },
+    # Not on the 3.0 site yet: only the film, from the Vimeo links Caleb sent on November 24, 2026.
+    "Driven by More": {"t": "Ford \u2014 Driven by More", "k": "Ford", "v": [["1149501141", 1.99]]},
+    "Steel Alchemist": {"t": "Ford \u2014 Steel Alchemist", "k": "Ford", "v": [["1149544144", 1.99]]},
+    "Los Escarabajos": {"t": "Ford \u2014 Los Escarabajos", "k": "Ford", "v": [["1249876870/bd7b9a1c5b", 1.99]]},
     "Toyota": {
-        "t": "Expand Your World (Director's Cut)", "k": "Toyota 4Runner",
-        "f": [["Agency", "Saatchi & Saatchi"], ["Production company", "Friends & Family"]],
+        "t": "Toyota 4Runner \u2014 Expand Your World", "k": "Toyota 4Runner",
+        "f": [["Agency", "Saatchi & Saatchi"], ["Production", "Friends & Family"]],
         "v": [["1060044305", 1.778]],
         "d": ["Four days in the Pacific Northwest wilderness: rained out, lightning struck, plowed off a mountain by a snowstorm. This director's cut keeps the fun and playfulness of the shoot."],
         "cr": [
@@ -335,8 +364,8 @@ PAGES = {
         ],
     },
     "Ford": {
-        "t": "Journeyman (feat. Bryan Cranston)", "k": "Ford",
-        "f": [["Agency", "Wieden+Kennedy"], ["Production company", "Friends & Family"]],
+        "t": "Ford \u2014 Journeyman (feat. Bryan Cranston)", "k": "Ford",
+        "f": [["Agency", "Wieden+Kennedy"], ["Production", "Friends & Family"]],
         "v": [["1056219278", 1.425]],
         "cr": [
             ["Agency", "Wieden+Kennedy: ACDs Jake Thompson, Alex McClelland; Producer Jane Lee; Art Director Madi Ko; Copywriter Carla Hanson"],
@@ -352,26 +381,40 @@ PAGES = {
         ],
     },
     "RX": {
-        "t": "The Joy of Movement", "k": "Lexus",
-        "f": [["Agency", "Dentsu"], ["Production company", "AOI"]],
+        "t": "Lexus \u2014 Joy of Movement", "k": "Lexus",
+        "f": [["Agency", "Dentsu"], ["Production", "Toboggan"]],
         "v": [["731741278", 1.778]],
         "d": ["Shot with a production team in Guadalajara. Images by Juliano and Chad Terpstra; music by Grant."],
-        "cr": [["Director, Editor", "Caleb Slain"]],
+        "cr": [["Director, Editor", "Caleb Slain"], ["Production Company", "Toboggan"], ["Producer", "Keita Yamamura"]],
     },
     "RZ": {
-        "t": "Next Chapter", "k": "Lexus",
-        "f": [["Agency", "Dentsu"], ["Production company", "AOI & Ampersand"]],
+        "t": "Lexus \u2014 Next Chapter", "k": "Lexus",
+        "f": [["Agency", "Dentsu"], ["Production", "AOI & Ampersand"], ["Shot in", "Big Sur, Japan, Michigan, Thailand, Peru"]],
+        "aw": [["2022", "Vimeo: Staff Pick"]],
         "v": [["716947353", 1.778]],
         "d": ["Reveal film for the first all-electric Lexus. 5 productions, 4 countries, 3 continents; about 75% directed remotely, including two simultaneous productions in Japan and Thailand. The brief: express the imperceptible side of nature through sound."],
         "pr": [["1.4", "Six of the best creative commercials (Lexus, Next Chapter)", "https://onepointfour.co/2022/05/10/six-of-the-best-creative-commercials-56"]],
         "cr": [
             ["Director", "Caleb Slain"],
-            ["Producer", "Keita Yamamura"],
-            ["Agency (Dentsu)", "ECD Hiroyuki Ito; Art Director Hirofumi Isoya"],
+            ["Agency", "Dentsu"],
+            ["Production Companies", "AOI Productions (Japan), Ampersand (U.S.)"],
+            ["Cinematographers", "Will Stone (Big Sur), Erwan Cloarec (Japan), Chad Terpstra (Michigan), Rattakarn \u201cGarn\u201d Srithavatchai (Thailand), Daniel G\u00e1rate (Peru)"],
+            ["Editor", "Nick Pezzillo"],
+            ["Colorist", "Benoit Cot\u00e9"],
+            ["Executive Creative Director", "Hiroyuki Ito"],
+            ["Creative Director", "Masashi Sada"],
+            ["Art Director", "Hirofumi Isoya"],
+            ["Executive Producer (Japan)", "Hirohide Takene"],
+            ["Producer (Japan)", "Ryuta Iwasa"],
+            ["Executive Producer (U.S.)", "Susan Herbert"],
+            ["Audio Post", "One Thousand Birds; Executive Producer Guin Frehling"],
+            ["Sound Design + Mix", "Andres Velasquez"],
+            ["Production Designer (Big Sur)", "Brett Lama"],
+            ["Production Services", "Passion Pictures Bangkok (Thailand), APU Productions (Peru)"],
         ],
     },
     "LC 500": {
-        "t": "Dreamed in Japan", "k": "Lexus",
+        "t": "Lexus \u2014 Dreamed in Japan", "k": "Lexus",
         "f": [["Agency", "Dentsu"]],
         "v": [["222246783", 1.778]],
         "log": "Koji Sato's thoughts on cars and dreams.",
@@ -387,19 +430,19 @@ PAGES = {
         ],
     },
     "Lahgo": {
-        "t": "The Unforgiving Minute (Father's Day Short)", "k": "Lahgo",
+        "t": "Lahgo \u2014 The Unforgiving Minute", "k": "Lahgo",
         "v": [["723095718", 1.5]],
-        "d": ["A delicate father/daughter story about love, trust and sacrifice for Lahgo, a women-owned men's sleepwear company. Loosely based on the life of actor Spencer, opposite Luciana."],
-        "cast": "Spencer, Luciana",
+        "d": ["A father/daughter story about trust and sacrifice. Created for Lahgo, a women-owned men's sleepwear company. Loosely based on the life of actor Spencer Falls, opposite Luciana."],
+        "cast": "Spencer Falls, Luciana Qui\u00f1onez",
         "cr": [["Director", "Caleb Slain"]],
     },
     "Forza": {
-        "t": "Hypnosis", "k": "Forza Horizon 2 (Microsoft)",
+        "t": "Forza Horizon 2 \u2014 Hypnosis", "k": "Turn 10 Studios \u00b7 Xbox Game Studios",
         "v": [["119383333", 1.778]],
-        "d": ["Opening cinematic for the racing game Forza Horizon 2."],
+        "d": ["Opening cinematic for the racing video game Forza Horizon 2."],
     },
     "Surface": {
-        "t": "Surface", "k": "Microsoft Surface",
+        "t": "Microsoft \u2014 Surface", "k": "Microsoft",
         "films": [
             {
                 "t": "Surface I", "v": ["45335576", 2.353],
@@ -415,8 +458,8 @@ PAGES = {
             },
             {
                 "t": "Surface II", "v": ["75443927", 2.353],
-                "f": [["Production company", "Workhouse Creative"]],
-                "d": ["All elements and minerals were researched and built with care; everything was captured in camera (with one CG shot)."],
+                "f": [["Production", "Workhouse Creative"]],
+                "d": ["All elements were researched and compiled with care. Captured in camera. No VFX."],
                 "cr": [
                     ["Creative + Director", "Caleb Slain"],
                     ["Executive Producer", "Keith Rivers"],
@@ -440,15 +483,15 @@ PAGES = {
         "t": "Uniqlo", "k": "Uniqlo",
         "f": [["Agency", "Dentsu, Tokyo"]],
         "films": [
-            {"t": "Cashmere", "v": ["135703114", 1.778],
+            {"t": "Uniqlo \u2014 Cashmere", "v": ["135703114", 1.778],
              "log": "A cozy morning with Trombone Shorty and Charlotte Kemp.",
              "cast": "Trombone Shorty, Charlotte Kemp"},
-            {"t": "Singin' in the Snow", "v": ["139256094", 1.778],
+            {"t": "Uniqlo \u2014 Singin' in the Snow", "v": ["139256094", 1.778],
              "log": "A winter wonderland inspired rendition of Singing in the Rain."},
         ],
     },
     "Flowstate": {
-        "t": "Flowstate", "k": "Flowstate (Overman)",
+        "t": "Flowstate \u2014 Evolution of Writing", "k": "Flowstate (Overman)",
         "v": [["153287044", 1.778]],
         "log": "Flowstate is a new way to write.",
         "links": [["Mac App Store", "http://apple.co/1SOBdfb"], ["iOS App Store", "http://apple.co/1OV4Jw2"]],
@@ -477,12 +520,12 @@ PAGES = {
         ],
     },
     "Nikon": {
-        "t": "Starlight", "k": "Nikon",
+        "t": "Nikon \u2014 Starlight", "k": "Nikon",
         "v": [["355732434", 1.778]],
         "d": ["An experimental story developed to tease Nikon's first wholly redesigned lens mount in 60 years."],
     },
     "Regular Coffee": {
-        "t": "Regular Coffee", "k": "Regular Coffee / Rowster New American Coffee",
+        "t": "Regular Coffee \u2014 Regular is the New Awesome", "k": "Regular Coffee / Rowster New American Coffee",
         "v": [["51298800", 1.778]],
         "log": "If you haven't heard, it seems \"Regular\" is the new awesome.",
         "d": ["A SBTXT + Gorilla community project, shot on 16mm Aaton with Kodak Vision 3."],
@@ -504,9 +547,22 @@ PAGES = {
     },
 }
 
-# pages with several films: the page's video list is its films' videos, captioned with each film's title
-for _p in PAGES.values():
+IMMERSIVE = {"mfd", "driverless", "magvr", "psh"}
+for _k, _p in PAGES.items():
+    # pages with several films: the page's video list is its films' videos, captioned with each film's title
     if "films" in _p:
         _p["v"] = [[f["v"][0], f["v"][1], f["t"]] for f in _p["films"]]
         for f in _p["films"]:
             del f["v"]
+    # section line; green gallery keys are lower case ids, white gallery keys are screen names
+    film = _k.islower() or _k in IMMERSIVE
+    _p["s"] = "03 Immersive + Odd" if _k in IMMERSIVE else "01 Fiction + Reality" if film else "02 Ad + Commercial"
+    if not film:
+        # commercials show no year; the brand is a fact only where the title does not already begin with it
+        brand = _p.pop("k")
+        if not _p["t"].startswith(brand):
+            _p.setdefault("f", []).insert(0, ["Brand", brand])
+    # cast sits with the facts under the title
+    for q in [_p] + _p.get("films", []):
+        if "cast" in q:
+            q.setdefault("f", []).append(["Cast", q.pop("cast")])
