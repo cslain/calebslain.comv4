@@ -339,7 +339,24 @@ PAGES = {
         ],
     },
     # Not on the 3.0 site yet: only the film, from the Vimeo links Caleb sent on November 24, 2026.
-    "Driven by More": {"t": "Ford \u2014 Driven by More", "k": "Ford", "v": [["1149501141", 1.99]]},
+    # credits from Caleb's Instagram post of December 24, 2025 (the caption's own names; handles without a name are left out)
+    "Driven by More": {
+        "t": "Ford \u2014 Driven by More", "k": "Ford", "v": [["1149501141", 1.99]],
+        "f": [["Production", "Friends & Family"]],
+        "feat": "Cyclists Gilberto Del Campo (Coach), Ramon Alcantara, Matthew Garel, Carlos Dias, Tara Moore, Jaimes Timas, Chonzie Bhota. Filmmakers Rafael Cebrian (Director), Bianca Santos (Drone Engineer), Deyker Carranza (Boom), Ellen Marte (1st AC), Jose Alvarez (Gaffer), Krystal De La Cruz (1st AD), Tom Avila (Key Grip), Mauri Perez (DoP). Steel artist Diego Torres.",
+        "cr": [
+            ["Director", "Caleb Slain"],
+            ["Voice", "Bryan Cranston"],
+            ["Director of Photography", "Kris Bonnell"],
+            ["Production Designer", "Trae King"],
+            ["Editor / Sound Design", "Nick Pezzillo"],
+            ["EP / Managing Director", "Scott Kaplan"],
+            ["Producer", "Jeff Tannebring"],
+            ["2nd Director", "Terry Rayment"],
+            ["2nd DoP", "Chad Terpstra"],
+            ["2nd Producer", "Brian Buckland"],
+        ],
+    },
     "Steel Alchemist": {"t": "Ford \u2014 Steel Alchemist", "k": "Ford", "v": [["1149544144", 1.99]]},
     "Los Escarabajos": {"t": "Ford \u2014 Los Escarabajos", "k": "Ford", "v": [["1249876870/bd7b9a1c5b", 1.99, None, .015]]},
     "Toyota": {
@@ -385,7 +402,19 @@ PAGES = {
         "f": [["Agency", "Dentsu"], ["Production", "Toboggan"]],
         "v": [["731741278", 1.778]],
         "d": ["Shot with a production team in Guadalajara. Images by Juliano and Chad Terpstra; music by Grant."],
-        "cr": [["Director, Editor", "Caleb Slain"], ["Production Company", "Toboggan"], ["Producer", "Keita Yamamura"]],
+        # credits from Caleb's Instagram post of August 25, 2022 (core names only; the full list is on Vimeo)
+        "cr": [
+            ["Director, Editor", "Caleb Slain"],
+            ["Executive Creative Director", "Hiroyuki Ito"],
+            ["Agency (Dentsu)", "Creative Director Masashi Sada; Art Director Hirofumi Isoya; Producers Shinichi Osaki, Yoshika Dan"],
+            ["Production (AOI)", "Producers Hirohide Takene, Ryuta Iwasa"],
+            ["Production (Toboggan)", "Producers Keita Yamamura, Eric Machiela"],
+            ["Production (Red Creek)", "Executive Producer Analia Tiscornia; Line Producer Ricardo Salcedo Garc\u00eda"],
+            ["Directors of Photography", "Juliano Lopes, Chad Terpstra, Tadashi Tawarayama"],
+            ["Assistant Director", "Elsa Forsbach"],
+            ["Sound Design", "Andres Velasquez"],
+            ["Original Music", "Grant Floering"],
+        ],
     },
     "RZ": {
         "t": "Lexus \u2014 Next Chapter", "k": "Lexus",
@@ -406,6 +435,7 @@ PAGES = {
             ["Art Director", "Hirofumi Isoya"],
             ["Executive Producer (Japan)", "Hirohide Takene"],
             ["Producer (Japan)", "Ryuta Iwasa"],
+            ["Producer", "Keita Yamamura"],
             ["Executive Producer (U.S.)", "Susan Herbert"],
             ["Audio Post", "One Thousand Birds; Executive Producer Guin Frehling"],
             ["Sound Design + Mix", "Andres Velasquez"],
