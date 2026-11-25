@@ -43,6 +43,8 @@ CSS = '''/*PGCSS-BEGIN project page styles (tools/pages_build.py) */
   @media (min-width: 821px) { #modal.stick #mmedia { position: sticky; top: clamp(64px, 8vh, 96px); } }
   .mk a { color: var(--g); text-decoration: none; border-bottom: 1px solid rgba(30,234,140,.35); }
   .mk a:hover, .mk a:focus-visible { border-bottom-color: var(--g); background: rgba(30,234,140,.12); outline: none; }
+  /* rows folded away stay away: a clipped line sets its own display, which would otherwise beat the hidden attribute */
+  #mpage [hidden] { display: none !important; }
   #mpage { font: 400 12px/1.6 var(--mono); letter-spacing: .01em; color: rgba(190,246,220,.86); }
   #mpage p { margin: 0 0 14px; max-width: 56ch; }
   #mpage .mline { margin: -8px 0 16px; font-size: 10px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--gd); }
