@@ -11415,7 +11415,7 @@ function __psDecode(ac){if(__psD||!__psB)return;__psD=new Map;for(let[m,p]of __p
    On a touchscreen every finger on the keys plays its own chord: a finger landing below middle C takes the left hand's
    chord and one at or above it takes the right hand's, unless another finger already has that hand.
    Pedals: the right pedal sustains (notes ring after release), the left is the soft pedal (quieter, darker). */
-var __CH=[["Major",[0,4,7]],["Minor",[0,3,7]],["Dominant 7",[0,4,7,10]],["Major 7",[0,4,7,11]],["Minor 7",[0,3,7,10]],["Sus 2",[0,2,7]],["Sus 4",[0,5,7]],["Diminished",[0,3,6]],["Augmented",[0,4,8]],["Add 9",[0,4,7,14]]],__ch=Math.floor(Math.random()*10),__chL=Math.floor(Math.random()*10),__CC=[],__chHk="",__kbo=3,__pf=new Map,__KL={KeyZ:0,KeyX:2,KeyC:4,KeyV:5,KeyB:7,KeyN:9,KeyM:11,Comma:12},__sus=!1,__susK=!1,__soft=!1,__sv=[],__PD={};
+var __CH=[["Major",[0,4,7]],["Minor",[0,3,7]],["Dominant 7",[0,4,7,10]],["Major 7",[0,4,7,11]],["Minor 7",[0,3,7,10]],["Sus 2",[0,2,7]],["Sus 4",[0,5,7]],["Diminished",[0,3,6]],["Augmented",[0,4,8]],["Add 9",[0,4,7,14]]],__ch=Math.floor(Math.random()*10),__chL=Math.floor(Math.random()*10),__CC=[],__chHk="",__kbo=2,__pf=new Map,__KL={KeyZ:0,KeyX:2,KeyC:4,KeyV:5,KeyB:7,KeyN:9,KeyM:11,Comma:12},__sus=!1,__susK=!1,__soft=!1,__sv=[],__PD={};
 function __chordTones(r,h){let c=h==="L"?__chL:__ch;return c==null?[r]:__CH[c][1].map(k=>r+k).filter(n=>n<=108)}
 function __chordDown(id,r,h){let ns=__chordTones(r,h);ns.forEach((n,k)=>Dc(k?id+"#"+k:id,n));for(let k=ns.length;k<5;k++)Yh(id+"#"+k)}
 function __chordUp(id){for(let k=0;k<5;k++)Yh(k?id+"#"+k:id)}
