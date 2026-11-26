@@ -61,7 +61,7 @@
   #ways { flex: none; width: min(1180px, 76vw); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1.5em; margin: 0 0 clamp(14px, 5vh, 60px); font-size: calc(1.2 * clamp(12px, 1.08vw, 17px)); }
   #enter, #jump { padding: .9em 1em .84em; font: 400 1em/1 var(--mono); white-space: nowrap; letter-spacing: .06em; text-align: center; color: var(--c); background: rgba(3,8,6,.35); border: 2px solid var(--c); border-radius: 4px; cursor: pointer; transition: background .15s, color .15s; }
   #enter { --c: hsl(152, 100%, 48%); }
-  #jump { --c: hsl(152, 50%, 77%); }
+  #jump { --c: hsl(152, 100%, 48%); }
   #enter b, #jump b { font-weight: 600; }
   #enter:hover, #jump:hover, #enter:focus-visible, #jump:focus-visible { border-color: transparent; outline: none; background: linear-gradient(rgba(5,10,8,.94), rgba(5,10,8,.94)) padding-box, linear-gradient(90deg, #1eea8c, #5fe8ff, #8f9bff, #d58bff, #ff8fcf, #ffd27a, #1eea8c, #5fe8ff, #8f9bff) border-box; background-size: 100% 100%, 300% 100%; animation: irid 2.6s ease-in-out infinite alternate; box-shadow: 0 0 12px rgba(95,232,255,.5), 0 0 26px rgba(213,139,255,.38), 0 0 46px rgba(30,234,140,.28); }
   @media (prefers-reduced-motion: reduce) { #enter:hover, #jump:hover, #enter:focus-visible, #jump:focus-visible { animation: none; } }
@@ -184,7 +184,7 @@
   .cattabs { display: flex; align-items: flex-end; margin-top: 8px; border-bottom: 1px solid rgba(30,234,140,.42); }
   .cattabs button { flex: 1 1 0; min-width: 0; font: 500 15px/1.2 var(--mono); letter-spacing: .1em; text-transform: uppercase; text-align: left; color: rgba(30,234,140,.45); background: none; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; padding: 6px 0 9px; cursor: pointer; transition: color .15s; }
   .cattabs button:first-child { --c: hsl(152, 100%, 48%); color: hsla(152, 100%, 48%, .45); }
-  .cattabs button:last-child { --c: hsl(152, 55%, 66%); color: hsla(152, 55%, 66%, .5); text-align: right; }
+  .cattabs button:last-child { --c: hsl(152, 100%, 48%); color: hsla(152, 100%, 48%, .45); text-align: right; }
   .cattabs button:first-child:hover, .cattabs button:first-child:focus-visible, .cattabs button:last-child:hover, .cattabs button:last-child:focus-visible { color: var(--c); outline: none; }
   .cattabs button:first-child[aria-pressed="true"], .cattabs button:last-child[aria-pressed="true"] { color: var(--c); border-bottom-color: var(--c); }
   #catbody[data-show="Films"] > [data-g="Advertising"], #catbody[data-show="Advertising"] > [data-g="Films"] { display: none; }
